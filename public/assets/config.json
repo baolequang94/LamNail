@@ -1,0 +1,10 @@
+{
+	"menu": [
+		{ "name": "Hủy Diệt Nail 1", "price": "100.000 VND" },
+		{ "name": "Hủy Diệt Nail 2", "price": "200.000 VND" },
+		{ "name": "Hủy Diệt Nail 3", "price": "200.000 VND" }
+	],
+	"menuTotal": {
+		"Gói cơ bản": "$ 2.000.000 VND"
+	}
+}
