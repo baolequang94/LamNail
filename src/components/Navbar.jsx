@@ -1,14 +1,28 @@
 import React, { useState } from "react";
 import { AiOutlineClose, AiOutlineMenu } from "react-icons/ai";
 
+import { Link } from "react-scroll";
+
 import Logo from "./Logo";
+
+const LinkS = ({ to, label, onClick }) => (
+	<Link
+		to={to}
+		spy={true}
+		smooth={true}
+		offset={-70}
+		duration={500}
+		className="cursor-pointer"
+		onClick={onClick}
+	>
+		{label}
+	</Link>
+);
 
 const Navbar = () => {
 	const [isOpenNav, setIsOpenNav] = useState(false);
 
-	const toggleNav = () => {
-		setIsOpenNav((prev) => !prev);
-	};
+	const toggleNav = () => setIsOpenNav((prev) => !prev);
 
 	return (
 		<header className="fixed top-0 left-0 right-0 bg-white z-10 shadow-md">
@@ -16,16 +30,16 @@ const Navbar = () => {
 				<Logo />
 				<ul className="hidden md:flex">
 					<li className="p-4 whitespace-nowrap">
-						<a>Trang chủ</a>
+						<LinkS to="root" label="Trang chủ" />
 					</li>
 					<li className="p-4 whitespace-nowrap">
-						<a>Giới thiệu</a>
+						<LinkS to="intro" label="Giới thiệu" />
 					</li>
 					<li className="p-4 whitespace-nowrap">
-						<a>Bảng giá</a>
+						<LinkS to="menu" label="Bảng giá" />
 					</li>
 					<li className="p-4 whitespace-nowrap">
-						<a>Liên hệ</a>
+						<LinkS to="footer" label="Liên hệ" />
 					</li>
 				</ul>
 				<div onClick={toggleNav} className="block md:hidden">
@@ -43,16 +57,16 @@ const Navbar = () => {
 						<AiOutlineClose size={20} className="mr-4" onClick={toggleNav} />
 					</div>
 					<li className="p-4 border-b border-b-gray-800 whitespace-nowrap">
-						<a>Trang chủ</a>
+						<LinkS to="root" label="Trang chủ" onClick={toggleNav} />
 					</li>
 					<li className="p-4 border-b border-b-gray-800 whitespace-nowrap">
-						<a>Giới thiệu</a>
+						<LinkS to="root" label="Giới thiệu" onClick={toggleNav} />
 					</li>
 					<li className="p-4 border-b border-b-gray-800 whitespace-nowrap">
-						<a>Bảng giá</a>
+						<LinkS to="menu" label="Bảng giá" onClick={toggleNav} />
 					</li>
 					<li className="p-4 border-b border-b-gray-800 whitespace-nowrap">
-						<a>Liên hệ</a>
+						<LinkS to="footer" label="Liên hệ" onClick={toggleNav} />
 					</li>
 				</ul>
 			</div>

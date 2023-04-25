@@ -9,10 +9,7 @@ const Map = ({ height, width }) => {
 				id="gmap_canvas"
 				height={height}
 				width={width}
-				src="https://maps.google.com/maps?q=104A Nhất Chi Mai, P.13, Q.Tân Bình, HCM&t=&z=13&ie=UTF8&iwloc=&output=embed"
-				frameborder="0"
-				marginheight="0"
-				marginwidth="0"
+				src="https://maps.google.com/maps?hl=en&amp;q=104a%20nh%E1%BA%A5t%20chi%20mai+(Lam%20Nail%20&amp;%20Eyelash)&amp;t=&amp;z=13&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
 			></iframe>
 		</div>
 	);

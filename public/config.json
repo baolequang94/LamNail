@@ -1,0 +1,46 @@
+{
+	"homePage": {
+		"title": "Title HP",
+		"subTitle": "Sub title HP"
+	},
+	"intro": {
+		"title": "Title intro",
+		"subTitle": "Sub title intro",
+		"content": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum molestiae delectus culpa hic assumenda, voluptate reprehenderit dolore autem cum ullam sed odit perspiciatis. Doloribus quos velit, eveniet ex deserunt fuga?"
+	},
+	"intro2": {
+		"title": "Title intro2",
+		"subTitle": "Sub title intro2",
+		"content": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum molestiae delectus culpa hic assumenda, voluptate reprehenderit dolore autem cum ullam sed odit perspiciatis. Doloribus quos velit, eveniet ex deserunt fuga?"
+	},
+	"menu1": {
+		"title": "Menu 1",
+		"totalPrice": "$ 1.197.000",
+		"items": [
+			{ "name": "Hủy diệt nail", "price": "399.000" },
+			{ "name": "Hủy diệt nail 2", "price": "399.000" },
+			{ "name": "Hủy diệt nail 3", "price": "399.000" }
+		]
+	},
+	"menu2": {
+		"title": "Menu 2",
+		"totalPrice": "$ 1.297.000",
+		"items": [
+			{ "name": "Hủy diệt nail", "price": "399.000" },
+			{ "name": "Hủy diệt nail 2", "price": "399.000" },
+			{ "name": "Hủy diệt nail 3", "price": "399.000" }
+		]
+	},
+	"menu3": {
+		"title": "Menu 3",
+		"totalPrice": "$ 1.397.000",
+		"items": [
+			{ "name": "Hủy diệt nail", "price": "399.000" },
+			{ "name": "Hủy diệt nail 2", "price": "399.000" },
+			{ "name": "Hủy diệt nail 3", "price": "399.000" }
+		]
+	},
+	"footer": {
+		"slogan": "Lorem ipsum dolor sit amet."
+	}
+}

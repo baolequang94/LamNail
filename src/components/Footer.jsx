@@ -1,27 +1,33 @@
-import React from "react";
+import React, { useContext } from "react";
 import { FaFacebookSquare, FaInstagram, FaYoutubeSquare } from "react-icons/fa";
 import { IoLocationSharp } from "react-icons/io5";
 import { AiOutlineShop } from "react-icons/ai";
 
 import Map from "./Map";
 import Logo from "./Logo";
+import SettingContext from "../context/Setting";
 
 const Footer = () => {
+	const {
+		footer: { slogan = "" },
+	} = useContext(SettingContext);
+
 	return (
-		<div className="max-w-[1240px] mx-auto py-16 px-4 grid lg:grid-cols-4 gap-8 text-black">
+		<div
+			id="footer"
+			className="max-w-[1240px] mx-auto py-16 px-4 grid lg:grid-cols-4 gap-8 text-black"
+		>
 			<div>
 				<div className="lg:text-left text-center">
 					<Logo className="inline mr-4" />
 					<span className="py-4 font-bold">Nail & Eyelash</span>
 				</div>
-				<p className="py-4 lg:text-left text-center">
-					Lorem ipsum dolor sit amet.
-				</p>
-				<div className="flex justify-around md:w-[75%] my-6 lg:mx-0 mx-auto text-[#93BFCF]">
+				<p className="py-4 lg:text-left text-center">{slogan}</p>
+				{/* <div className="flex justify-around md:w-[75%] my-6 lg:mx-0 mx-auto text-[#93BFCF]">
 					<FaFacebookSquare size={30} />
 					<FaInstagram size={30} />
 					<FaYoutubeSquare size={30} />
-				</div>
+				</div> */}
 			</div>
 			<div className="lg:col-span-3 flex lg:flex-row flex-col justify-between mt-6">
 				<div className="mb-6">
@@ -48,7 +54,7 @@ const Footer = () => {
 					</ul>
 				</div>
 				<div className="mb-6">
-					<Map height={150} width={300} />
+					<Map height={300} width={400} />
 				</div>
 			</div>
 		</div>
